@@ -1,24 +1,7 @@
 # my-portfolio-github-action-aws-s3
 My Portfolio Deployment on AWS S3 using GitHub Actions (CI/CD Pipeline)
 
-📊 CI/CD Workflow Diagram
-
-┌────────────┐      Push Code     ┌───────────────┐
-│  Developer │ ──────────────────►│ GitHub Repo   │
-└────────────┘                    └───────────────┘
-                                       │
-                                       ▼
-                          ┌────────────────────────┐
-                          │ GitHub Actions Workflow│
-                          └────────────────────────┘
-                                       │
-                                       ▼
-                          ┌────────────────────────┐
-                          │ AWS S3 (Static Hosting)│
-                          └────────────────────────┘
-                                       │
-                                       ▼
-                          http://<bucket>.s3-website-<region>.amazonaws.com
+Developer → GitHub Repo → GitHub Actions → AWS S3 → Live Website
                 
 
 ## 🔧 Tech Used
@@ -39,10 +22,9 @@ My Portfolio Deployment on AWS S3 using GitHub Actions (CI/CD Pipeline)
 - GitHub repo secrets:
   - `AWS_ACCESS_KEY_ID`
   - `AWS_SECRET_ACCESS_KEY`
-  - `AWS_REGION`
-  - `S3_BUCKET`
 
 🔹 Step-by-Step Setup
+
 ✅ 1. Create an S3 Bucket for Static Hosting
 Go to AWS → S3 → Create Bucket
 
@@ -63,7 +45,7 @@ Attach policy: AmazonS3FullAccess
 
 Save the Access Key ID and Secret Access Key
 
-🔐 Best practice: Use fine-grained permissions and limit to just this bucket in production.
+
 
 ✅ 3. Add Secrets to GitHub
 Go to your GitHub repo → Settings → Secrets → Actions:
