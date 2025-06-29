@@ -28,7 +28,7 @@ Developer → GitHub Repo → GitHub Actions → AWS S3 → Live Website
 ✅ 1. Create an S3 Bucket for Static Hosting
 Go to AWS → S3 → Create Bucket
 
-Name: my-webapp-bucket
+Name: my-portfolio
 
 Uncheck “Block all public access”
 
