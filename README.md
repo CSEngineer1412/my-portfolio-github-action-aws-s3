@@ -1,7 +1,7 @@
 # my-portfolio-github-action-aws-s3
 My Portfolio Deployment on AWS S3 using GitHub Actions (CI/CD Pipeline)
 
-Developer → GitHub Repo → GitHub Actions → AWS S3 → Live Website
+Developer → GitHub Repo → GitHub Actions → AWS S3 → Live Website 
                 
 
 ## 🔧 Tech Used
